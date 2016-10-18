@@ -1,2 +1,7 @@
 x = input('Enter a number:\n')
-print(sum(list(x)),
+summ = 0
+multi = 1
+for i in list(str(x)):
+    summ += int(i)
+    multi *= int(i)
+print (summ, multi)
