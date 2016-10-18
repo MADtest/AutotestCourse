@@ -6,5 +6,3 @@ for i in range(x):
             break
         elif i == x-1 and x % i == 1:
             print "True"
-
-# print [x for x in range(x+1) if x & [1:x] == 0]
