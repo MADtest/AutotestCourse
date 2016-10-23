@@ -13,7 +13,7 @@ def in_brackets(input_string, replacement, all_or_not = 0):
         if ends[i] < starts[i+1]:
             end_index = i
             break
-    return input_string.replace(input_string[starts[0]+1:ends[i]], replacement)
+    return input_string.replace(input_string[starts[0]+1:ends[end_index]], replacement)
 
 if __name__ == '__main__':
-    print in_brackets('dssvf (sdf(rbfdb)(sfsd)ski) fsdgsf (dsgds) ', 'RRRR')
+    print in_brackets('dssvf (sdf(rb(jfgx)fdb)(sfsd)ski) fsdgsf (dsgds) ', 'RRRR')
