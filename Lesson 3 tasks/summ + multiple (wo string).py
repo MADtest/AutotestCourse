@@ -11,7 +11,7 @@ while x/razryad >= 1:
     razryad_range += 1
 
 for i in range(razryad_range):
-    list_of_numbers.append(int(x/(((10**(razryad_range-(i+1)))))))
+    list_of_numbers.append(int(x/(10**(razryad_range-(i+1)))))
     summ += list_of_numbers[i]
     multi *= list_of_numbers[i]
     x -= list_of_numbers[i]*(10**(razryad_range-(i+1)))
