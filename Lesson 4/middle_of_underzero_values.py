@@ -4,7 +4,6 @@ def middle_value(given_list):
         for i in range(len(given_list[j])):
             if given_list[j][i] < 0:
                 list_of_underzero.append(given_list[j][i])
-    print list_of_underzero
     return sum(list_of_underzero)/len(list_of_underzero)
 
 if __name__ == '__main__':
