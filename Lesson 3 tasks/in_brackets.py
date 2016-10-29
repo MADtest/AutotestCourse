@@ -47,22 +47,22 @@ def in_brackets(input_string, replacement, all_or_not='a'):
         #     input_string.replace(input_string[allstarts[i]:allends[i]], replacement)
         return result_string
 
-
-def in_brackets_new (input_string, replacement, all_or_not='a'):
-    starts = []
-    ends = []
-    for i in range(len(input_string)):
-        if input_string[i] == '(':
-            starts.append(i)
-        elif input_string[i] == ')':
-            ends.append(i)
-    end_index = 0
-    for i in range(len(ends)):
-        if ends[i] < starts[i+1]:
-            end_index = i
-            break
-    if all_or_not == 'a':
-        return input_string.replace('('+input_string[starts[0]+1:ends[end_index]]+')', '('+replacement+')')
+#
+# def in_brackets_new (input_string, replacement, all_or_not='a'):
+#     starts = []
+#     ends = []
+#     for i in range(len(input_string)):
+#         if input_string[i] == '(':
+#             starts.append(i)
+#         elif input_string[i] == ')':
+#             ends.append(i)
+#     end_index = 0
+#     for i in range(len(ends)):
+#         if ends[i] < starts[i+1]:
+#             end_index = i
+#             break
+#     if all_or_not == 'a':
+#         return input_string.replace('('+input_string[starts[0]+1:ends[end_index]]+')', '('+replacement+')')
 
 if __name__ == '__main__':
 
