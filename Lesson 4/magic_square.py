@@ -27,6 +27,6 @@ def is_magic(given_list):
         return False
 if __name__ == '__main__':
     input_list = input()
-    print(is_unic(input_list))
+    print(is_magic(input_list))
     # print is_magic([[1, 5, -7], [-5, 7, -8], [-9, -2, 5]])
     # print is_magic([[27,29,2, 4, 13, 36], [9, 11, 20, 22, 31, 18], [32, 25, 7, 3, 21, 23], [14, 16, 34, 30, 12, 5], [28, 6, 15, 17, 26, 19], [1, 24, 33, 35, 8, 10]])
