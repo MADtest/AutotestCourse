@@ -15,7 +15,7 @@ def in_brackets(input_string, replacement, all_or_not='a'):
             end_index = i
             break
     if all_or_not == 'a':
-        return input_string.replace('('+input_string[starts[0]+1:ends[end_index]]+')', '('+replacement+')')
+        return input_string.replace(input_string[starts[0]:ends[end_index]]+')', '('+replacement+')')
     if all_or_not == 'b':
         allstarts = [starts[0]]
         allends = [ends[end_index]]
@@ -50,5 +50,5 @@ def in_brackets(input_string, replacement, all_or_not='a'):
 #
 if __name__ == '__main__':
 
-    print in_brackets('dssvf (sdf(rb(jfgx)fdb)(sfsd)ski) fsdgsf (ds(g)ds) sdf (ds(g)ds) sdf ', 'RRRR', 'b')
+    print in_brackets('dssvf (sd()f(rb(jfgx)fdb)(sfsd)ski) fsdgsf (ds(g)ds) sdf (ds(g)ds) sdf ', 'RRRR', 'b')
 
