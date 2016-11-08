@@ -8,13 +8,13 @@ def args_and_result_or_error_to_file(f):
             file.write(str(inspect.getargspec(f))+'\n')
             # file.write(str(*args) + ' ' + str(**kwargs))
         try:
-            file.write(f(*args, **kwargs))
+            f(*args, **kwargs)
         except Exception as e:
             with open('c:\ms\log10.txt', 'a') as file:
                 file.write(str(e)+'\n')
         else:
             with open('c:\ms\log10.txt', 'a') as file:
-                file.write(f(*args, **kwargs)+'\n')
+                file.write(str(f(*args, **kwargs))+'\n')
 
     return log_function
 
