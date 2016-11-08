@@ -9,5 +9,5 @@ def check(a):
 
 
 if __name__ == '__main__':
-    check(45)
+    check(20)
 
