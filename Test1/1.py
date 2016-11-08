@@ -3,9 +3,9 @@
 
 def check(a):
     if a % 10 == 0 and a % 3 == 0:
-        print True
+        return True
     else:
-        print False
+        return False
 
 
 if __name__ == '__main__':
