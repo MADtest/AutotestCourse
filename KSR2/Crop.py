@@ -82,39 +82,41 @@ class Crop(object):
             available_water = input()
         self.grow(available_light, available_water)
 
-__e = 0
+
 
 
 def display_menu():
     test_crop = Crop()
+    __e = 'f'
+
     print 'Hello, this a crop growing emulator, choose an action'
-    while __e != 1:
+    while __e != 't':
         print ' 1 for manually growing the crop '
         print ' 2 for automatically growing the crop '
         print ' 3 to get the crop report '
         print ' 4 to exit'
-        get_menu_choice()
+        get_menu_choice(test_crop)
 
 
-def get_menu_choice():
+def get_menu_choice(corp):
     choice = input()
     if choice in (1, 2, 3):
-        manage_crop(choice)
+        manage_crop(choice, corp)
     elif choice == 4:
         print 'Good buy'
-        __e = 1
+        exit()
     else:
         print 'Incorrect input'
         display_menu()
 
 
-def manage_crop(choice):
+def manage_crop(choice, crop):
     if choice == 1:
-        test_crop.manual_grow()
+        crop.manual_grow()
     elif choice == 2:
-        test_crop.auto_grow()
+        crop.auto_grow()
     elif choice == 3:
-        test_crop.report()
+        print crop.report()
 
 if __name__ == '__main__':
     crop1 = Crop(2, 4, 3)
