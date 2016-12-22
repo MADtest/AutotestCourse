@@ -13,13 +13,13 @@ class Book(object):
             .format(name=self.name, author=self.author, isbn=self.isbn)
 
 
-
 class Library(object):
     def __init__(self):
         pass
 
-    def add(self, book):
-        pass
+    def add(self):
+        print 'Enter new book name, author and isbn:'
+        self.book_name =
 
 
 
