@@ -1,0 +1,4 @@
+!!python/object:__main__.Book
+author: Bob Dylan
+isbn: 1234567890
+name: iBook
